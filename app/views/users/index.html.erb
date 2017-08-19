@@ -1,0 +1,18 @@
+
+<h1>Profissionais</h1>
+ 
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Area de Atuacao</th>
+  </tr>
+ 
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.name %></td>
+      <td><%= user.field %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to "Voltar", welcome_index_path %>

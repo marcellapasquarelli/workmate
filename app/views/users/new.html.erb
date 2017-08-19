@@ -1,0 +1,16 @@
+<h1>Cadastro de profissional</h1>
+<%= form_for :user, url: users_create_path do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= f.label :field %><br>
+    <%= f.text_field :field %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
